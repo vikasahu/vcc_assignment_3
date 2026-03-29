@@ -33,7 +33,6 @@ def metrics():
 
 @app.route('/compute/<int:n>')
 def compute(n):
-    """CPU-intensive endpoint - finds prime numbers up to n"""
     start = time.time()
     primes = []
     for num in range(2, n):
